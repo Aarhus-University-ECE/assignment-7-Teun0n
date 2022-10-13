@@ -12,12 +12,14 @@ int main(int argc, char **argv)
     this is done three times for n_inputs n=1,n=5,n=20 for taylor_sine function.*/
     double x_input=0;
     int n_input=1;
+    printf("\nn_input = 1\n");
     for(int i=0;i<5;i++)
     {
    
     x_input+=M_PI_2;
     printf("\ntaylor_sine(%f,%d) = %f   sin(%f) = %f\n",x_input,n_input,taylor_sine(x_input,n_input),x_input,sin(x_input));
     }
+    printf("\nn_input = 5\n");
     x_input=0;
     n_input=5;
     for(int j=0;j<5;j++)
@@ -26,6 +28,7 @@ int main(int argc, char **argv)
     x_input+=M_PI_2;
     printf("\ntaylor_sine(%f,%d) = %f   sin(%f) = %f\n",x_input,n_input,taylor_sine(x_input,n_input),x_input,sin(x_input));
     }
+    printf("\nn_input = 20\n");
     x_input=0;
     n_input=20;
     for(int k=0;k<5;k++)
@@ -33,6 +36,7 @@ int main(int argc, char **argv)
     x_input+=M_PI_2;
     printf("\ntaylor_sine(%f,%d) = %f   sin(%f) = %f\n",x_input,n_input,taylor_sine(x_input,n_input),x_input,sin(x_input));
     }
+    printf("\n\n");
     /* taylor_sine gets closer to math.h sin function, with higher n_input values.
     For n=1, only 1 value was close to math.h sin function
     For n=5, 3 values where close or equal to math.h sin function
