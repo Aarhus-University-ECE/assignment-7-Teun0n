@@ -2,6 +2,7 @@
 
 void initialize(stack* s){
   //implement initialize here
+  node*
 }
 
 void push(int x, stack* s){
